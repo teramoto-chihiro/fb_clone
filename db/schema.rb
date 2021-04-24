@@ -17,8 +17,10 @@ ActiveRecord::Schema.define(version: 2021_04_24_113050) do
 
   create_table "pictures", force: :cascade do |t|
     t.string "image"
-    t.string "content"
+    t.text "content"
     t.bigint "user_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
     t.index ["user_id"], name: "index_pictures_on_user_id"
   end
 
