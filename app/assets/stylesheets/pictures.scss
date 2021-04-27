@@ -9,6 +9,15 @@ p, ol, ul, td {
   line-height: 18px;
 }
 
+.container {
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+  min-height: 100%;
+  padding: 0;
+  background-color: blackl;
+}
+
 pre {
   background-color: #eee;
   padding: 10px;
